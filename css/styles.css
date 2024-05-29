@@ -43,3 +43,52 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  border: 2px solid #222831;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 100px);
+}
+
+.wrapper > div {
+  border: 2px solid #222831;
+  border-radius: 5px;
+  padding: 1em;
+  color: #151515;
+}
+
+.box1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  background-color: #A91D3A; /* Red color */
+}
+.box2 {
+  grid-column: 1;
+  grid-row: 3 / span 2;
+  background-color: #FFE0B5; /* Beige color */
+}
+.box3 {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  background-color: #CAE6B2; /* Green color */
+}
+.box4 {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  background-color: #CAF4FF; /* Blue color */
+}
+.box5 {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  background-color: #8576FF; /* Purple color */
+}
+.box6{
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 1;
+  background-color: #FF76CE; /* Pink color */
+}
