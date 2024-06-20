@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Lastname Firstname: 225</title>
+    <title>About</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
     <!-- Bootstrap core CSS -->
     <link href="css/styles.css" rel="stylesheet">
@@ -49,14 +49,36 @@
 
     <script>
         const user = {
-            name: '',
-            imageUrl: '',
-            bio: ''
+            name: 'Claudette Rankine',
+            imageUrl: 'https://github.com/crankine1970/crankine1970.github.io/blob/main/images/ReactDOM.JPG',
+            bio: 'My name is Claudette Rankine and I am currently in my final semester of pursuing a Bachelor of Science in Cyber Security, which I am set to complete in August 2024. This is my second web design course, and I am enjoying the opportunity to learn more about this field and I am looking forward to applying what I have learned in the real world.'
         };
 
         // Step one - Create a React element
+         class App extends React.Component {
+  state = {
+    count: 0,
+  };
+  handleClick = () => {
+    this.setState((previousCount) => ({
+      count: previousCount.count + 1,
+    }));
+  };
 
         // Step 2: Render the React element
+             render() {
+    return (
+      <div>
+        <h1>Click Me React Rendering</h1>
+        <button onClick={this.handleClick}>Click me</button>
+        <p>Button has been clicked {this.state.count} times</p>
+      </div>
+    );
+  }
+}
+
+React.render(<App />, document.getElementById('app'));
+             
 
     </script>
 
