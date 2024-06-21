@@ -47,10 +47,10 @@
     <div id="h1">About</div>
     <div id="img"></div>
     <div id="content"></div>
-
+<img class="responsive-image" src="image.jpg" alt="Responsive Image">
     <script>
         const user = {
-            name: '',
+            name: 'Claudette Rankine',
             imageUrl: ''https://github.com/crankine1970/crankine1970.github.io/blob/rankine-final/Favicon.ico',
             bio: ''The desktop performance audit of my GitHub page that was done via the Chrome Lighthouse audit tool returned an overall performance rating of 96 which is good. Accessibility and Best Practices both scored 100. SEO is 66 which needs improvement.
 
