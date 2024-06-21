@@ -19,6 +19,21 @@ main.container-fluid {
     width: 50%;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+.column {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
