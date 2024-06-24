@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>About</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
     <!-- Bootstrap core CSS -->
@@ -43,20 +44,51 @@
 </nav>
 
 <main role="main" class="container-fluid">
-    <div id="h1"></div>
+    <div id="h1">About</div>
     <div id="img"></div>
     <div id="content"></div>
-
+<img class="responsive-image" src="image.jpg" alt="Responsive Image">
     <script>
         const user = {
-            name: '',
-            imageUrl: '',
-            bio: ''
+            name: 'Claudette Rankine',
+            imageUrl: ''https://github.com/crankine1970/crankine1970.github.io/blob/rankine-final/Favicon.ico',
+            bio: ''The desktop performance audit of my GitHub page that was done via the Chrome Lighthouse audit tool returned an overall performance rating of 96 which is good. Accessibility and Best Practices both scored 100. SEO is 66 which needs improvement.
+
+Diagnostic suggests:
+Eliminate render-blocking resources Potential savings of 280 ms 
+Reduce unused CSS Potential savings of 102 KiB
+Page prevented back/forward cache restoration 2 failure reasons
+Serve images in next-gen formats Potential savings of 10 KiB
+'
         };
 
         // Step one - Create a React element
+         class App extends React.Component {
+  state = {
+    count: 0,
+  };
+  handleClick = () => {
+    this.setState((previousCount) => ({
+      count: previousCount.count + 1,
+    }));
+  };
 
         // Step 2: Render the React element
+             render() {
+    return (
+      <div>
+        <h1>Click Me React Rendering</h1>
+        <button onClick={this.handleClick}>Click me</button>
+        <p>Button has been clicked {this.state.count} times</p>
+      </div>
+      <footer>
+        <div id="Web Design Finals"></div>
+      </footer>
+   );
+  }
+}
+
+React.render(<App />, document.getElementById('app'));
 
     </script>
 
